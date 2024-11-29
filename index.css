@@ -1,10 +1,12 @@
-/* top bar */
+/* top bar starts */
 /* Background and padding for the section */
 #home {
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background for a modern look */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    /* Gradient background for a modern look */
     color: white;
     padding: 15px 0;
-    border-radius: 5px; /* Slight rounded corners for the section */
+    border-radius: 5px;
+    /* Slight rounded corners for the section */
 }
 
 /* Contact Info Styling */
@@ -21,8 +23,10 @@
 
 /* Social Icons Hover Effect */
 .social-icons:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    color: #ee730e; /* Icon color change on hover */
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    color: #ee730e;
+    /* Icon color change on hover */
 }
 
 /* Spacing and alignment for the row */
@@ -47,12 +51,15 @@
     }
 
     .row.align-items-center {
-        text-align: center; /* Center align the items on small screens */
-        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        /* Center align the items on small screens */
+        flex-direction: column;
+        /* Stack items vertically */
     }
 
     .col-auto {
-        margin-bottom: 10px; /* Add space between elements */
+        margin-bottom: 10px;
+        /* Add space between elements */
     }
 }
 
@@ -95,7 +102,10 @@ i {
     }
 }
 
-/* top carousel section */
+/* top bar ends */
+
+
+/* top carousel section starts */
 /* General carousel caption styling */
 /* General carousel container styling */
 .carousel {
@@ -252,8 +262,12 @@ i {
     }
 }
 
+/* top carousel section ends */
 
-/* contact and time section */
+
+
+/* contact and time section starts */
+
 /* General Styling */
 .information {
     position: relative;
@@ -279,7 +293,8 @@ i {
 
 /* Adding a subtle background color change on hover */
 .info-box:hover {
-    background-color: #ff7300;
+    /* background-color: #ff7300; */
+    background: linear-gradient(to bottom, #e8f1fc, #cfe4fb);
     color: white;
 }
 
@@ -347,7 +362,136 @@ i {
 }
 
 
-/* about section */
+/* contact and time section ends */
+
+
+
+/* Form / appointment section starts */
+/* Overall Container */
+.appointment-form-container {
+    background: linear-gradient(to bottom, #e8f1fc, #cfe4fb);
+    border-radius: 10px;
+    padding: 30px;
+    width: 75vw;
+    margin: auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-out;
+}
+
+/* Form Header Tabs */
+.form-header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-btn.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Form Fields */
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+label span {
+    color: red;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+
+/* Mobile Input */
+.mobile-input {
+    display: flex;
+    gap: 5px;
+}
+
+.country-code {
+    width: 15%;
+    border-right: 0;
+}
+
+#mobile {
+    width: 85%;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #003d80;
+    transform: scale(1.03);
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Form / appointment section ends */
+
+
+
+/* about section starts*/
 /* General Styling for both sections */
 #about {
     position: relative;
@@ -476,10 +620,17 @@ p {
 }
 
 
-/* Service section */
+/* about section ends*/
+
+
+
+/* Service section starts*/
 
 #services {
-    background-color: #2B343B;
+    /* background-color: #2B343B; */
+    /* background-color: #0a3d62; */
+    /* background-color: #8ac5ef; */
+    background: linear-gradient(to bottom, #e8f1fc, #cfe4fb);
 }
 
 /* Animation for cards */
@@ -487,15 +638,15 @@ p {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.service-card{
-    height: 400px;
+.service-card {
+    height: 450px;
 }
 
-.animate-card img{
-    height: 200px;
+.animate-card img {
+    height: 250px;
 }
 
-.animate-card a{
+.animate-card a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -583,7 +734,11 @@ p {
 }
 
 
-/* gallary section */
+/* Service section ends*/
+
+
+
+/* gallary section starts */
 
 .gallery-item {
     position: relative;
@@ -626,20 +781,25 @@ p {
     font-size: 24px;
 }
 
-/* doctors panel */
+
+/* gallary section ends */
+
+
+
+/* doctors panel starts*/
 
 .doctorpanel {
-    height: 370px;
+    height: 480px;
 }
 
-/* .docpimg {
-    height: 350px;
-} */
+.doctorpanel img {
+    height: 320px;
+}
 
 
 /* <!-- Adding custom CSS for design improvement --> */
 .card-body {
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.6); */
     /* Dark background for better text contrast */
     border-radius: 0 0 15px 15px;
 }
@@ -713,9 +873,13 @@ p {
 }
 
 
-/* video education */
+/* doctors panel ends*/
 
-.video-education {
+
+
+/* video education starts*/
+
+/* .video-education {
     padding-bottom: 40px;
     background-color: #000000;
 }
@@ -732,58 +896,13 @@ p {
     height: 300px;
     border: none;
     display: block;
-}
+} */
 
 
+/* video education ends*/
 
 
-/* <!-- media query for call and whatsapp btn at bottom --> */
-/* Hide by default */
-#basecallbtn {
-    display: none;
-}
-
-/* Show only for screens smaller than 425px */
-@media (max-width: 425px) {
-
-    .media {
-        margin-top: 10px;
-    }
-
-    #basecallbtn {
-        display: block;
-    }
-
-    /* Adjustments for buttons and text on small screens */
-    #basecallbtn .call-btn,
-    #basecallbtn .whatsapp-btn {
-        width: 50%;
-        /* Each button takes up half the width */
-        padding: 10px 5px;
-        text-align: center;
-    }
-
-    #basecallbtn .call-btn {
-        background-color: #00A3C8;
-        border-right: 1px solid #fff;
-    }
-
-    #basecallbtn .whatsapp-btn {
-        background-color: #2ab201;
-    }
-
-    #basecallbtn img {
-        height: 24px;
-        width: 24px;
-    }
-
-    #basecallbtn a {
-        font-size: 13px;
-        color: white;
-    }
-}
-
-/* Testimonials section */
+/* Testimonials section starts */
 
 /* General Styling */
 #testimonials {
@@ -833,6 +952,7 @@ h2 {
     color: #ee730e;
     margin-top: 10px;
 }
+
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -900,8 +1020,103 @@ h2 {
 }
 
 
+/* Testimonials section ends */
 
-/* footer section */
+
+/* history section starts */
+/* History Section Styles */
+.history-section {
+    background: linear-gradient(to right, #e8f8f5, #fef9e7);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 1.5s ease;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    animation: fadeInDown 1.5s ease;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.history-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    animation: fadeIn 2s ease;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.history-content span {
+    font-style: italic;
+}
+
+.history-section:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .history-content p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+/* history section ends */
+
+
+
+/* footer section starts*/
 #footer-3 {
     background-color: #2B343B;
 }
@@ -1030,3 +1245,71 @@ h2 {
         height: 250px;
     }
 }
+
+
+/* footer section ends*/
+
+
+/* Base Styles */
+#basecallbtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #efefef;
+    z-index: 1000;
+    display: none; /* Default: Hidden */
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#basecallbtn .row {
+    display: flex;
+    margin: 0;
+}
+
+#basecallbtn .call-btn,
+#basecallbtn .whatsapp-btn {
+    flex: 1; /* Each takes 50% width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#basecallbtn .call-btn {
+    background-color: #00A3C8;
+    border-right: 1px solid #fff;
+}
+
+#basecallbtn .whatsapp-btn {
+    background-color: #2ab201;
+}
+
+#basecallbtn img {
+    vertical-align: middle;
+}
+
+/* Media Query */
+@media (max-width: 425px) {
+    #basecallbtn {
+        display: block; /* Show only for small screens */
+    }
+
+    #basecallbtn a {
+        font-size: 12px;
+    }
+
+    #basecallbtn img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
