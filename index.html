@@ -7,33 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ophthalmologist (Eye Doctor) in Ulwe Navi Mumbai | Ulwe Eye Clinic</title>
 
-    <link rel="stylesheet" href="index.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
 
     <!-- top bar -->
-    <div class="bg-primary text-white py-2" id="home">
+    <!-- <div class="bg-primary text-white py-2" id="home">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-auto">
-                    <i class="fa-solid fa-phone"></i> <span class="contact-info">+91 97690 76008</span>
+                    <i class="fa-solid fa-phone"></i> <span class="contact-info">+91 8104441581 / 8356076193</span>
                 </div>
                 <div class="col-auto">
-                    <i class="fas fa-envelope"></i> <span class="contact-info">drsusantachatterjee@gmail.com</span>
+                    <i class="fas fa-envelope"></i> <span class="contact-info">rajaeyecare10@gmail.com</span>
                 </div>
-                <div class="col-auto ms-auto">
+                <div class="col-auto">
                     <a href="#" target="_blank" class="social-icons text-white mx-3">
                         <i class="fab fa-facebook-f"></i>
                     </a>
@@ -46,11 +46,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="/">
                 <img src="/images/eye-clinic-logo.png" alt="Ulwe Eye Clinic Logo" class="img-fluid logo-sm">
             </a>
@@ -72,18 +72,18 @@
                             Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <a class="dropdown-item" href="#">PHACOEMULSIFICATION</a>
-                            <a class="dropdown-item" href="#">LASER CATARACT SURGERY</a>
-                            <a class="dropdown-item" href="#">MOST ADVANCE LENSES MONOFOCAL</a>
-                            <a class="dropdown-item" href="#">MULTIFOCAL/TRIFOCAL</a>
-                            <a class="dropdown-item" href="#">CENTRE FOR EXCELLENCE FOR GLAUCOMA SURGERIES</a>
-                            <a class="dropdown-item" href="#">AHMED GLAUCOMA VALVE I-STENT SURGERIES</a>
-                            <a class="dropdown-item" href="#">VISION THERAPY FOR AMBLYOPIA</a>
-                            <a class="dropdown-item" href="#">SQUINT, HIGH GLASS POWER</a>
-                            <a class="dropdown-item" href="#">MEIBOSOFT THERAPY</a>
-                            <a class="dropdown-item" href="#">DRY EYE TREATMENT</a>
-                            <a class="dropdown-item" href="#">ALL MEDICLAIM AVAILABLE</a>
-                            <a class="dropdown-item" href="#">CASHLESS CATARACT SURGERY AVAILABLE</a>
+                            <a class="dropdown-item" href="#services">PHACOEMULSIFICATION</a>
+                            <a class="dropdown-item" href="#services">LASER CATARACT SURGERY</a>
+                            <a class="dropdown-item" href="#services">MOST ADVANCE LENSES MONOFOCAL</a>
+                            <a class="dropdown-item" href="#services">MULTIFOCAL/TRIFOCAL</a>
+                            <a class="dropdown-item" href="#services">CENTRE FOR EXCELLENCE FOR GLAUCOMA SURGERIES</a>
+                            <a class="dropdown-item" href="#services">AHMED GLAUCOMA VALVE I-STENT SURGERIES</a>
+                            <a class="dropdown-item" href="#services">VISION THERAPY FOR AMBLYOPIA</a>
+                            <a class="dropdown-item" href="#services">SQUINT, HIGH GLASS POWER</a>
+                            <a class="dropdown-item" href="#services">MEIBOSOFT THERAPY</a>
+                            <a class="dropdown-item" href="#services">DRY EYE TREATMENT</a>
+                            <a class="dropdown-item" href="#services">ALL MEDICLAIM AVAILABLE</a>
+                            <a class="dropdown-item" href="#services">CASHLESS CATARACT SURGERY AVAILABLE</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -96,9 +96,9 @@
                             <a class="dropdown-item" href="#video">Video</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Patient's Info</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
@@ -114,51 +114,46 @@
     </nav>
 
     <!-- top carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide banner1 mb-5" data-bs-ride="carousel"
-        style="margin: 0; padding: 0; max-width: 100%; height: 400px; position: relative;">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
-            <!-- Carousel Item 1 -->
-            <div class="carousel-item active">
-                <img src="images/WhatsApp Image 2024-11-06 at 13.46.41_7afdaba5.jpg" class="d-block w-100"
-                    alt="Regular Eye Checkup" style="height: 450px;">
-                <div class="carousel-caption d-flex justify-content-center align-items-center">
-                    <div class="caption-content text-center">
-                        <h3 class="animated fadeInUp bg-danger">Regular Eye Checkup</h3>
-                        <p class="animated fadeInUp text-white">Your Journey for Better Vision Starts Here with Regular
-                            Eye Checkup</p>
-                        <a href="#" class="btn btn-primary animated fadeInUp">Read More</a>
-                        <a href="#" class="btn btn-outline-light animated fadeInUp">Contact Us</a>
-                    </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/WhatsApp Image 2024-11-06 at 13.46.41_7afdaba5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>FREE ON CALL COUNSELLING SERVICES FOR CATARACT</h2>
                 </div>
             </div>
-
-            <!-- Carousel Item 2 -->
-            <div class="carousel-item">
-                <img src="images/WhatsApp Image 2024-11-06 at 13.46.41_7afdaba5.jpg" class="d-block w-100"
-                    alt="Pediatric Eye Doctors" style="height: 450px;">
-                <div class="carousel-caption d-flex justify-content-center align-items-center">
-                    <div class="caption-content text-center">
-                        <h3 class="animated fadeInUp bg-danger">Pediatric Eye Doctors</h3>
-                        <p class="animated fadeInUp text-white">Eye Exams, Vision Correction & Eye Health for Children
-                        </p>
-                        <a href="#" class="btn btn-primary animated fadeInUp">Read More</a>
-                        <a href="#" class="btn btn-outline-light animated fadeInUp">Contact Us</a>
-                    </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/WhatsApp Image 2024-11-06 at 13.46.41_7afdaba5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>GET EXPERT EYE CARE FACILITIES AT <br> DR RAJA
+                        SUPERSPECIALITY EYE CARE</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/WhatsApp Image 2024-11-06 at 13.46.41_7afdaba5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>SCHEDULE YOUR APPOINTMENT <br> WITH US TODAY!</h2>
                 </div>
             </div>
         </div>
-
-        <!-- Carousel Controls -->
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev"
-            style="top: 50%; transform: translateY(-50%);">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next"
-            style="top: 50%; transform: translateY(-50%);">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </a>
+        </button>
     </div>
 
     <!-- contact and time -->
@@ -198,7 +193,7 @@
     </section>
 
     <!-- Form / appointment form -->
-    <div class="appointment-form-container mb-5" id="appointment">
+    <div class="appointment-form-container mb-5" data-aos="fade-up" data-aos-delay="300" id="appointment">
         <div class="form-header">
             <button class="tab-btn active" id="appointment-tab">Appointment</button>
         </div>
@@ -225,7 +220,10 @@
                 <label for="appointment-date">Appointment Date <span>*</span></label>
                 <input type="date" id="appointment-date" required>
             </div>
-            <button type="submit" class="submit-btn">Submit</button>
+            <!-- <button type="submit" class="submit-btn">Submit</button> -->
+            <div class="d-grid gap-2 col-4 mx-auto p-2">
+                <button class="btn btn-primary p-2" type="button">Submit</button>
+            </div>
         </form>
     </div>
 
@@ -293,12 +291,12 @@
                             alt="Glaucoma treatment services at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top service-img" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">Glaucoma
-                            </h3>
+                            <h6 class="card-title text-danger">GLAUCOMA SURGERIES
+                            </h6>
                             <p class="card-text text-dark" style="font-size: 1rem;">Glaucoma is a group of related eye
                                 disorders that cause damage to the optic nerve.</p>
                             <!-- <a href="" class="btn btn-outline-primary">Read more</a> -->
-                            <div class="d-grid gap-2 col-4 mx-auto">
+                            <div class="d-grid gap-2 col-5 mx-auto">
                                 <button class="btn btn-primary" type="button">Read more</button>
                             </div>
                         </div>
@@ -312,12 +310,12 @@
                         <img src="images/cataract.jpg" alt="Eye cataract treatment at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top service-img" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">Cataract
+                            <h3 class="card-title text-danger">MOST ADVANCE LENSES MONOFOCAL
                             </h3>
                             <p class="card-text text-dark" style="font-size: 1rem;">A cataract is a clouding of the
                                 lens in the eye, leading to a decrease in vision.</p>
                             <!-- <a href="" class="btn btn-outline-primary">Read more</a> -->
-                            <div class="d-grid gap-2 col-4 mx-auto">
+                            <div class="d-grid gap-2 col-5 mx-auto">
                                 <button class="btn btn-primary" type="button">Read more</button>
                             </div>
                         </div>
@@ -331,11 +329,11 @@
                         <img src="images/lasik-services.jpg" alt="Lasik surgery at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top service-img" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">Lasik</h3>
+                            <h3 class="card-title text-danger">PHACOEMULSIFICATION </h3>
                             <p class="card-text text-dark" style="font-size: 1rem;">LASIK, also known as Laser-Assisted
                                 In Situ Keratomileusis or laser vision correction.</p>
                             <!-- <a href="" class="btn btn-outline-primary">Read more</a> -->
-                            <div class="d-grid gap-2 col-4 mx-auto">
+                            <div class="d-grid gap-2 col-5 mx-auto">
                                 <button class="btn btn-primary" type="button">Read more</button>
                             </div>
                         </div>
@@ -355,12 +353,12 @@
                             alt="Occuloplastic services at Ulwe Eye Clinic Navi Mumbai" class="card-img-top service-img"
                             style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">Oculoplasty
+                            <h3 class="card-title text-danger">AHMED GLAUCOMA VALVE I-STENT SURGERIES
                             </h3>
                             <p class="card-text text-dark" style="font-size: 1rem;">Ophthalmic plastic surgery, or
                                 oculoplastics, is a subspecialty of ophthalmology.</p>
                             <!-- <a href="" class="btn btn-outline-primary">Read more</a> -->
-                            <div class="d-grid gap-2 col-4 mx-auto">
+                            <div class="d-grid gap-2 col-5 mx-auto">
                                 <button class="btn btn-primary" type="button">Read more</button>
                             </div>
                         </div>
@@ -375,13 +373,11 @@
                             alt="Diabetic eye disease treatment at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top service-img" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">Diabetic
-                                Eye
-                                Disease</h3>
+                            <h3 class="card-title text-danger">VISION THERAPY FOR AMBLYOPIA, SQUINT, HIGH GLASS POWER</h3>
                             <p class="card-text text-dark" style="font-size: 1rem;">Diabetic eye disease includes eye
                                 conditions that affect people with diabetes.</p>
                             <!-- <a href="" class="btn btn-outline-primary">Read more</a> -->
-                            <div class="d-grid gap-2 col-4 mx-auto">
+                            <div class="d-grid gap-2 col-5 mx-auto">
                                 <button class="btn btn-primary" type="button">Read more</button>
                             </div>
                         </div>
@@ -396,12 +392,11 @@
                             alt="Strabismus and squint correction at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top service-img" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">Squint
-                                Correction</h3>
+                            <h3 class="card-title text-danger">MEIBOSOFT THERAPY /  DRY EYE TREATMENT</h3>
                             <p class="card-text text-dark" style="font-size: 1rem;">Strabismus is the medical term for
                                 squint, a condition where the eyes point in different directions.</p>
                             <!-- <a href="" class="btn btn-outline-primary">Read more</a> -->
-                            <div class="d-grid gap-2 col-4 mx-auto">
+                            <div class="d-grid gap-2 col-5 mx-auto">
                                 <button class="btn btn-primary" type="button">Read more</button>
                             </div>
                         </div>
@@ -415,12 +410,12 @@
     <!-- gallery -->
     <section id="gallery" style="padding-bottom: 40px;">
         <div class="container">
-            <h2 class="text-center pt-4" style="font-size: 40px;">Gallery</h2>
+            <h2 class="text-center text-primary pt-4" style="font-size: 40px;">Gallery</h2>
             <br>
             <div class="row">
                 <!-- Gallery Item 1 -->
                 <div class="col-md-4">
-                    <div class="gallery-item" style="height: 310px;">
+                    <div class="gallery-item">
                         <a href="">
                             <img class="img-fluid galimg" src="images/gallery1.jpg"
                                 alt="Eye specialist doctor at Ulwe Eye Clinic Navi Mumbai">
@@ -476,7 +471,7 @@
                         <img src="images/rahul.jpg" alt="Glaucoma treatment services at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top docpimg" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">DR. RAHUL
+                            <h3 class="card-title text-danger">DR. RAHUL
                                 RAJA ACHLERKAR</h3>
                             <p class="card-text text-dark" style="font-size: 1rem; font-weight: normal;">M.B.B.S.,
                                 D.N.B., FAEH<br><span class="">{Specialized in Advance Cataract &amp; Glaucoma}</span>
@@ -493,7 +488,7 @@
                             alt="Eye cataract treatment at Ulwe Eye Clinic Navi Mumbai" class="card-img-top docpimg"
                             style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">DR.
+                            <h3 class="card-title text-danger">DR.
                                 SIDDHESH BAPAT</h3>
                             <p class="card-text text-dark" style="font-size: 1rem; font-weight: normal;">M.B.B.S., MS,
                                 FVRS<br><span class="">{Retina Specialist}</span></p>
@@ -508,7 +503,7 @@
                         <img src="images/Vidula.jpg" alt="Lasik surgery at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top docpimg" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">OPTOM.
+                            <h3 class="card-title text-danger">OPTOM.
                                 VIDULA PATIL</h3>
                             <p class="card-text text-dark" style="font-size: 1rem; font-weight: normal;">
                                 MOPTOMETRY<br><span class="">{Specialized in Vision Therapy &amp; Neurovision
@@ -530,7 +525,7 @@
                             alt="Occuloplastic services at Ulwe Eye Clinic Navi Mumbai" class="card-img-top docpimg"
                             style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">DR.
+                            <h3 class="card-title text-danger">DR.
                                 JITENDRA PANDEY</h3>
                             <p class="card-text text-dark" style="font-size: 1rem; font-weight: normal;">M.B.B.S,
                                 DNB(OPTHAL) M.N.A.M.S, F.P.O.S<br><span class="">{PEDRIATRIC OPTHALMOLOGIST}</span></p>
@@ -546,7 +541,7 @@
                             alt="Diabetic eye disease treatment at Ulwe Eye Clinic Navi Mumbai"
                             class="card-img-top docpimg" style="transition: transform 0.3s ease-in-out;">
                         <div class="card-body">
-                            <h3 class="card-title text-danger" style="font-size: 1.5rem; font-weight: bold;">DR. RASIKA
+                            <h3 class="card-title text-danger">DR. RASIKA
                                 THAKUR DESPANDE</h3>
                             <p class="card-text text-dark" style="font-size: 1rem; font-weight: normal;">M.B.B.S.,
                                 DOMS, FCPRS<br><span class="">{CORNEA SPECIALIST}</span></p>
@@ -559,13 +554,11 @@
     </section>
 
     <!-- hospital team -->
-    <section class="container containerteam py-5 my-5">
+    <!-- <section class="container containerteam py-5 my-5">
         <div class="row">
-            <!-- Section Title -->
             <h1 class="text-center text-primary pb-4 font-weight-bold" style="font-family: 'Arial', sans-serif;">Our
                 Hospital Team</h1>
 
-            <!-- Left Column with Team Members -->
             <div class="col-md-6">
                 <div class="team-member mb-4">
                     <h4 class="text-danger font-weight-bold" style="font-family: 'Arial', sans-serif;">1. DR.
@@ -589,7 +582,6 @@
                 </div>
             </div>
 
-            <!-- Right Column with Team Members -->
             <div class="col-md-6">
                 <div class="team-member mb-4">
                     <h4 class="text-danger font-weight-bold" style="font-family: 'Arial', sans-serif;">6. Mr. Ganesh Lad
@@ -614,6 +606,161 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="hospitalteam">
+        <div class="container py-5">
+            <h1 class="text-center text-primary" id="servsec1"
+                style="font-family: 'Arial', sans-serif; font-weight: bold;">Our Hospital Team</h1>
+            <div class="row">
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-3 rounded">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h6 class="card-title">1. DR. CHITRAREKHA ACHLERKAR</h6>
+                                                <p class="card-text">BAMS, Medical Director</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">2. DR. NOOPUR ACHLERKAR</h5>
+                                                <p class="card-text">M.B.B.S, MD (PSM) Chief Medical Officer </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">3. MS. KIRAN SAHANI</h5>
+                                                <p class="card-text">BSC. Optometry</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">4. MRS. KSHITIJA MEMANE</h5>
+                                                <p class="card-text">Administrative Head</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">5. MRS. RUPALI BABAR</h5>
+                                                <p class="card-text">Counsellor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">6. Mr Ganesh Lad</h5>
+                                                <p class="card-text">TPA and Insurance Department</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">7. MS. VINITA YADAV</h5>
+                                                <p class="card-text">Optometrist</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">8.MS. AISHA SHAIKH</h5>
+                                                <p class="card-text">Optometrist</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">9. MS. TAHOOR SHAIKH</h5>
+                                                <p class="card-text">Digital Marketing & Social Media Manger</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="card mx-auto m-5" style="width:100%;">
+                                            <img src="images/lasik-services.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">10. MS. AYESHA SHAIKH</h5>
+                                                <p class="card-text">Public Relationship Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
     </section>
 
     <!-- video1 -->
@@ -710,13 +857,14 @@
     </section> -->
 
     <!-- Testimonials section -->
-    <section class="container mt-5" id="testimonials">
+    <section class="container mb-5" id="testimonials">
         <h2 class="text-center text-primary mb-5" style="font-size: 36px; font-weight: 600;">Testimonials</h2>
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel"
             style="background-image:url(images/testbg.jpg); background-size: cover; background-position: center center; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);">
             <div class="carousel-inner">
                 <!-- Testimonial 1 -->
-                <div class="carousel-item active" style="height: 350px; padding: 60px 80px; text-align: center;">
+                <div class="carousel-item active" data-bs-interval="3000"
+                    style="height: 350px; padding: 60px 80px; text-align: center;">
                     <div class="testimonial-content">
                         <p class="testimonial-text text-white">
                             My dad who's 80 years old became blind because of mature cataract. We went to Dr. Chatterjee
@@ -731,7 +879,8 @@
                     </div>
                 </div>
                 <!-- Testimonial 2 -->
-                <div class="carousel-item" style="height: 350px; padding: 60px 80px; text-align: center;">
+                <div class="carousel-item" data-bs-interval="3000"
+                    style="height: 350px; padding: 60px 80px; text-align: center;">
                     <div class="testimonial-content">
                         <p class="testimonial-text text-white">
                             I had the fortune of getting ICL surgery done by Dr. Susanta Chatterjee. I am so thankful to
@@ -912,7 +1061,7 @@
                         <hr id="footerhr1">
                         <center>
                             <p class="footer-copyright text-white fw-bold" id="copy1">
-                                Copyrights © 2024 All Rights Reserved, by Dr. Susanta Chatterjee's Ulwe Eye Clinic
+                                Copyrights © 2024 All Rights Reserved, by Dr. Raja Super Specialty Eye Hospital
                             </p>
                         </center>
                     </div>
@@ -946,6 +1095,17 @@
         </div>
     </div>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

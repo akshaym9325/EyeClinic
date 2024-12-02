@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* top bar starts */
 /* Background and padding for the section */
 #home {
@@ -5,7 +10,6 @@
     /* Gradient background for a modern look */
     color: white;
     padding: 15px 0;
-    border-radius: 5px;
     /* Slight rounded corners for the section */
 }
 
@@ -63,11 +67,9 @@
     }
 }
 
-
-
 /* Adjust logo size */
 .logo-sm {
-    max-width: 30vw !important;
+    max-width: 20vw !important;
     height: auto !important;
 }
 
@@ -101,174 +103,46 @@ i {
         /* Allow vertical scrolling if content exceeds */
     }
 }
-
 /* top bar ends */
 
 
 /* top carousel section starts */
-/* General carousel caption styling */
-/* General carousel container styling */
-.carousel {
-    max-width: 100%;
-    height: 400px;
-    position: relative;
-    margin: 0 auto;
+
+#carouselExampleInterval .carousel-item{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Carousel Item - Ensure the images fit within the carousel */
-.carousel-item img {
-    width: 100%;
+#carouselExampleInterval .carousel-item img{
     height: 100%;
-    object-fit: cover;
-    /* Makes sure the image covers the entire area without stretching */
 }
-
-/* Carousel Caption Styling */
-.carousel-caption {
-    position: absolute;
+#carouselExampleInterval .carousel-caption{
+    top: 40%;
+}
+.carousel-control-prev , .carousel-control-next{
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 10;
-    color: white;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    opacity: 0;
-    animation: fadeInUp 1s forwards;
 }
 
-/* Styling for the caption content */
-.caption-content h3,
-.caption-content p,
-.caption-content a {
-    opacity: 0;
-    animation: fadeInUp 1.2s ease forwards;
-    animation-delay: 0.5s;
-}
-
-.caption-content h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.caption-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* Button Styling */
-.caption-content .btn {
-    margin: 10px 5px;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 25px;
-}
-
-.caption-content .btn-primary {
-    background-color: #ee730e;
-    border: none;
-}
-
-.caption-content .btn-outline-light {
-    border: 2px solid white;
-    color: white;
-}
-
-/* Hover Effects */
-.caption-content .btn:hover {
-    background-color: #fff;
-    color: #ee730e;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Fade-in animation for carousel captions */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Animation for carousel content */
-.carousel-item {
-    transition: transform 1s ease-in-out;
-}
-
-/* Controls Styling */
 .carousel-control-prev,
 .carousel-control-next {
-    top: 50%;
-    transform: translateY(-50%);
-    color: #ee730e;
-    z-index: 10;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #ee730e;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
     transition: background-color 0.3s ease;
 }
 
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: #fff;
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-    color: #ee730e;
-}
-
-/* Animation for carousel items */
-.carousel-inner {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .carousel-caption {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .caption-content h3 {
-        font-size: 1.8rem;
-    }
-
-    .caption-content p {
-        font-size: 1rem;
-    }
-}
-
 /* top carousel section ends */
 
 
 
 /* contact and time section starts */
-
-/* General Styling */
 .information {
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -360,10 +234,7 @@ i {
         font-size: 2.5rem;
     }
 }
-
-
 /* contact and time section ends */
-
 
 
 /* Form / appointment section starts */
@@ -485,15 +356,11 @@ select:focus {
         transform: translateY(0);
     }
 }
-
-
 /* Form / appointment section ends */
 
 
-
 /* about section starts*/
-/* General Styling for both sections */
-#about {
+/* #about {
     position: relative;
     margin-top: 60px;
 }
@@ -525,29 +392,29 @@ p {
     font-size: 18px;
     font-weight: 600;
     transition: all 0.3s ease;
-}
+} */
 
 /* Hover effect on the 'Read More' button */
-.btn:hover {
+/* .btn:hover {
     background-color: #ee730e;
     color: white;
     transform: translateY(-5px);
-}
+} */
 
 /* Image Styling */
-.doctorimg {
+/* .doctorimg {
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 /* Hover effect for image */
-.doctorimg:hover {
+/* .doctorimg:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Animations */
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -581,10 +448,10 @@ p {
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 /* Apply Animations */
-.animated {
+/* .animated {
     opacity: 0;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -600,10 +467,10 @@ p {
 
 .animated.fadeInRight {
     animation-name: fadeInRight;
-}
+} */
 
 /* Media Query for smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .section-title {
         font-size: 28px;
         text-align: center;
@@ -617,15 +484,11 @@ p {
     .btn {
         font-size: 16px;
     }
-}
-
-
+} */
 /* about section ends*/
 
 
-
 /* Service section starts*/
-
 #services {
     /* background-color: #2B343B; */
     /* background-color: #0a3d62; */
@@ -642,8 +505,8 @@ p {
     height: 450px;
 }
 
-.animate-card img {
-    height: 250px;
+#services .animate-card img {
+    height: 240px;
 }
 
 .animate-card a {
@@ -692,15 +555,14 @@ p {
     transition: transform 0.3s ease-in-out;
 }
 
-.card-body {
+#services .card-body {
     border-radius: 0 0 15px 15px;
 }
 
-.card-title {
+#services .card-title {
     font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    color: white;
     text-align: center;
 }
 
@@ -732,14 +594,10 @@ p {
 .text-white {
     color: white !important;
 }
-
-
 /* Service section ends*/
 
 
-
 /* gallary section starts */
-
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -749,7 +607,7 @@ p {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    height: 310px;
     display: block;
     transition: transform 0.3s ease;
 }
@@ -780,22 +638,17 @@ p {
     color: #fff;
     font-size: 24px;
 }
-
-
 /* gallary section ends */
 
 
-
 /* doctors panel starts*/
-
 .doctorpanel {
-    height: 480px;
+    height: 470px;
 }
 
 .doctorpanel img {
-    height: 320px;
+    height: 300px !important;
 }
-
 
 /* <!-- Adding custom CSS for design improvement --> */
 .card-body {
@@ -810,11 +663,9 @@ p {
     transition: transform 0.3s ease-in-out;
 }
 
-.card-title {
-    color: #fff;
-    font-family: 'Arial', sans-serif;
+.doctorpanel h3{
+    font-size: 1.3rem !important; 
     font-weight: bold;
-    text-align: center;
 }
 
 .card-text {
@@ -831,7 +682,6 @@ p {
 .text-white {
     color: white !important;
 }
-
 
 /* <!-- Adding some custom CSS to enhance the design --> */
 .containerteam {
@@ -871,14 +721,29 @@ p {
 .pb-4 {
     padding-bottom: 1.5rem;
 }
-
-
 /* doctors panel ends*/
 
+/* hospital team section start */
+#hospitalteam .card-title{
+    color: #dc3545;
+    font-size: 20px;
+    text-align: center;
+}
 
+#hospitalteam .card-text{
+    color: black;
+}
+
+#hospitalteam .card{
+    height: 350px;
+}
+
+#hospitalteam img{
+    height: 200px;
+}
+/* hospital team section end */
 
 /* video education starts*/
-
 /* .video-education {
     padding-bottom: 40px;
     background-color: #000000;
@@ -897,21 +762,17 @@ p {
     border: none;
     display: block;
 } */
-
-
 /* video education ends*/
 
 
 /* Testimonials section starts */
-
-/* General Styling */
-#testimonials {
+/* #testimonials {
     position: relative;
     margin-top: 60px;
     padding-bottom: 40px;
-}
+} */
 
-h2 {
+/* h2 {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     text-transform: uppercase;
@@ -919,13 +780,7 @@ h2 {
     font-weight: bold;
     position: relative;
     z-index: 1;
-}
-
-.carousel-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+} */
 
 .testimonial-content {
     background-color: rgba(0, 0, 0, 0.7);
@@ -953,25 +808,6 @@ h2 {
     margin-top: 10px;
 }
 
-
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    transition: background-color 0.3s ease;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1);
-}
 
 /* Animations for carousel items */
 @keyframes fadeIn {
@@ -1018,13 +854,10 @@ h2 {
         padding: 30px 20px;
     }
 }
-
-
 /* Testimonials section ends */
 
 
 /* history section starts */
-/* History Section Styles */
 .history-section {
     background: linear-gradient(to right, #e8f8f5, #fef9e7);
     border-radius: 15px;
@@ -1059,11 +892,6 @@ h2 {
 
 .history-content span {
     font-style: italic;
-}
-
-.history-section:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease;
 }
 
 /* Animations */
@@ -1111,9 +939,7 @@ h2 {
         font-size: 28px;
     }
 }
-
 /* history section ends */
-
 
 
 /* footer section starts*/
@@ -1245,8 +1071,6 @@ h2 {
         height: 250px;
     }
 }
-
-
 /* footer section ends*/
 
 
@@ -1309,6 +1133,17 @@ h2 {
     #basecallbtn img {
         height: 20px;
         width: 20px;
+    }
+    .logo-sm {
+        max-width: 40vw !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 768px ) and (min-width:425px){
+    .logo-sm {
+        max-width: 40vw !important;
+        height: auto !important;
     }
 }
 
