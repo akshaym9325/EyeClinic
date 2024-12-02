@@ -108,18 +108,15 @@ i {
 
 /* top carousel section starts */
 
-#carouselExampleInterval .carousel-item{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#carouselExampleCaptions .carousel-item{
+    height: 85vh;
 }
 
-#carouselExampleInterval .carousel-item img{
+#carouselExampleCaptions .carousel-item img{
     height: 100%;
 }
-#carouselExampleInterval .carousel-caption{
-    top: 40%;
+#carouselExampleCaptions .carousel-caption{
+    /* top: 40%; */
 }
 .carousel-control-prev , .carousel-control-next{
     top: 50%;
