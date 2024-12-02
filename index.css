@@ -779,7 +779,7 @@ p {
     z-index: 1;
 } */
 
-/* .testimonial-content {
+.testimonial-content {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 30px 40px;
     border-radius: 10px;
@@ -789,7 +789,7 @@ p {
     z-index: 2;
     opacity: 0;
     animation: fadeIn 1.5s ease forwards;
-} */
+}
 
 .testimonial-text {
     font-size: 18px;
@@ -834,6 +834,9 @@ p {
 
 /* Make the testimonial section responsive */
 @media (max-width: 768px) {
+    .small{
+        display: block;
+    }
     h2 {
         font-size: 28px;
         margin-bottom: 30px;
@@ -847,12 +850,12 @@ p {
         font-size: 18px;
     }
 
-    .carousel-item {
+    /* .carousel-item {
         padding: 30px 20px;
-    }
-    #testimonialCarousel img{
-        height: 400px !important;
-        width: 100% !important;
+    } */
+
+    #testimonialCarousel .carousel-item ,#testimonialCarousel .testimonial-content{
+        padding: 27px 0px !important;
     }
 }
 /* Testimonials section ends */
