@@ -779,7 +779,7 @@ p {
     z-index: 1;
 } */
 
-.testimonial-content {
+/* .testimonial-content {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 30px 40px;
     border-radius: 10px;
@@ -789,7 +789,7 @@ p {
     z-index: 2;
     opacity: 0;
     animation: fadeIn 1.5s ease forwards;
-}
+} */
 
 .testimonial-text {
     font-size: 18px;
@@ -820,11 +820,11 @@ p {
 }
 
 /* Hover effect for carousel items */
-.carousel-item:hover .testimonial-content {
+/* .carousel-item:hover .testimonial-content {
     transform: scale(1.05);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 /* Style for Carousel Background */
 #testimonialCarousel {
@@ -849,6 +849,10 @@ p {
 
     .carousel-item {
         padding: 30px 20px;
+    }
+    #testimonialCarousel img{
+        height: 400px !important;
+        width: 100% !important;
     }
 }
 /* Testimonials section ends */
@@ -936,6 +940,14 @@ p {
         font-size: 28px;
     }
 }
+#historyimg img{
+    height: 230px;
+}
+
+#historyimg img:hover{
+    scale: 1.03;
+}
+
 /* history section ends */
 
 
