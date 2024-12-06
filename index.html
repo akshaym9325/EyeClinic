@@ -198,7 +198,7 @@
         <form class="appointment-form">
             <div class="form-group">
                 <label for="name">Name <span>*</span></label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="text" id="name" placeholder="Enter your name" minlength="3" pattern="^[a-zA-Z ]+$" required>
             </div>
             <div class="form-group">
                 <label for="mobile">Mobile Number <span>*</span></label>
@@ -207,7 +207,7 @@
                         <option value="+91">🇮🇳 +91</option>
                         <option value="+1">🇺🇸 +1</option>
                     </select>
-                    <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+                    <input type="tel" id="mobile" placeholder="Enter 10-digit number" pattern="^\d{10}$" minlength="10" maxlength="10" required>
                 </div>
             </div>
             <div class="form-group">
@@ -216,14 +216,14 @@
             </div>
             <div class="form-group">
                 <label for="appointment-date">Appointment Date <span>*</span></label>
-                <input type="date" id="appointment-date" required>
+                <input type="date" id="appointment-date" min="2024-12-06" max="2025-12-31" required>
             </div>
-            <!-- <button type="submit" class="submit-btn">Submit</button> -->
             <div class="d-grid gap-2 col-4 mx-auto p-2">
                 <button class="btn btn-primary p-2" type="submit">Submit</button>
             </div>
         </form>
     </div>
+    
 
     <!-- about1 -->
     <!-- <section class="container py-5 d-flex" id="about">
