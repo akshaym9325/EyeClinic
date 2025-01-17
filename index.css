@@ -232,6 +232,14 @@ i {
     animation: slideIn 1s ease-out;
 }
 
+@media (max-width: 768px ) {
+
+    .appointment-form-container{
+        width: 100vw;
+    }
+    
+}
+
 /* Form Header Tabs */
 .form-header {
     display: flex;
@@ -353,11 +361,11 @@ select:focus {
 }
 
 .service-card {
-    height: 450px;
+    height: 470px;
 }
 
 #services .animate-card img {
-    height: 240px;
+    height: 230px;
 }
 
 .animate-card a {
@@ -588,7 +596,7 @@ select:focus {
 }
 
 #hospitalteam img{
-    height: 200px;
+    height: 230px;
 }
 /* hospital team section end */
 
@@ -820,29 +828,19 @@ select:focus {
     transition: transform 0.3s ease;
 }
 
-.footer-links iframe:hover {
-    transform: scale(1.05);
-}
-
 /* Hover Effects for Footer Info and Social Icons */
 .footer-info:hover,
-.footer-socials-links:hover,
 .footer-links:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #copy1 {
     font-size: 14px;
-    padding: 20px 0;
     color: white;
 }
 
-.bottom-footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 /* Animating footer items */
 @keyframes slideUp {
@@ -863,26 +861,11 @@ select:focus {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .footer-info h3 {
-        font-size: 22px;
+
+    .col-md-4{
+        margin-top: 10px;
     }
 
-    .footer-socials-links {
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer-socials-links a {
-        margin: 0 10px;
-    }
-
-    .footer-info p {
-        font-size: 16px;
-    }
-
-    .footer-links iframe {
-        height: 250px;
-    }
 }
 /* footer section ends*/
 
@@ -959,5 +942,6 @@ select:focus {
         height: auto !important;
     }
 }
+
 
 
