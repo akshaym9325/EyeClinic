@@ -18,9 +18,20 @@
 }
 
 #appointmentbtn{
-    background: linear-gradient(to bottom, #e8f1fc, #cfe4fb);
-    /* border-radius: 30%; */
+    /* background: linear-gradient(to bottom, #e8f1fc, #cfe4fb); */
+    background: linear-gradient(to bottom, #e8f1fc, #bbd9f8);
+    border-radius: 10%;
 }
+.blink {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 
 /* Social Icons Styling */
 .social-icons {
@@ -97,6 +108,7 @@ i {
         overflow-y: auto;
     }
 }
+
 /* top bar ends */
 
 
@@ -125,6 +137,21 @@ i {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+
+    #carouselExampleCaptions .carousel-item{
+        height: 60vh;
+    }
+    
+    #carouselExampleCaptions .carousel-item img{
+        height: 60vh;
+    }
+    .carousel-control-prev , .carousel-control-next{
+        top: 50%;
+    }
+    
 }
 /* top carousel section ends */
 
@@ -942,6 +969,3 @@ select:focus {
         height: auto !important;
     }
 }
-
-
-
